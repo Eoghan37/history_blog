@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+          <title>moon</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+      <style>
+        :root {
+          --foreground: #444;
+          --background: #FFF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            --foreground: #c9d1d9;
+            --background: #0d1117;
+          }
+
+          a:link {
+            color: #58a6ff;
+          }
+
+          a:visited {
+            color: #8e96f0;
+          }
+        }
+
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+
+        body {
+          /* font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          color: var(--foreground);
+          background: var(--background);
+
+          font-size: 1.2em;
+
+          margin: 0px 8px;
+        }
+
+        .blog {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 0 10px;
+          line-height: 2.0;
+        }
+
+        h1,
+        h2,
+        h3 {
+          /* line-height: 1.5; */
+        }
+
+        p {
+          text-align: justify;
+          margin: 2em 0;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: sticky;
+          left: 0;
+          top: 0;
+          background: var(--background);
+        }
+
+        hr {
+          width: 100%;
+          margin: 0;
+        }
+
+        .nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+        }
+
+        /* TODO: Why doesnt this render */
+        .nav div {
+          height: 1em;
+          width: 2px;
+          background: var(--foreground);
+        }
+
+        .nav a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--foreground);
+
+          margin: 10px;
+        }
+
+        iframe {
+          width: 100%;
+          aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 800px) {
+          .nav {
+            flex-direction: column;
+          }
+
+          .nav div {
+            height: 2px;
+            width: 100%;
+          }
+        }
+
+        .footer {
+          /* position: absolute; */
+          position: sticky;
+          left: 0;
+          bottom: 0;
+
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          box-sizing: border-box;
+          padding: 1.5in 7vw;
+
+          /* background: var(--foreground); */
+        }
+
+        .footer a {
+          color: var(--foreground);
+          /* color: var(--background); */
+          font-size: 4em;
+          text-decoration: none;
+        }
+
+        @media (max-width: 1200px) {
+          .footer {
+            position: static;
+            padding: 0.5in 7vw;
+            padding-top: 0in;
+
+            /* width: 100%; */
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            /**/
+            /* box-sizing: border-box; */
+            /* padding: 1.5in 7vw; */
+          }
+        }
+
+
+        figure {
+          margin: 0.5in 0;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 30px;
+        }
+
+        .small {
+          width: 50%;
+        }
+
+        figcaption {
+          text-align: center;
+        }
+      </style>
+      <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="header-container">
+     <div class="title-bar">
+      <h1>From the Earth to the Stars</h1>
+     </div>
+
+     <hr>
+
+     <div class="nav">
+      <a href="history.html">A Histoy of Space Exploration</a>
+      <div></div>
+      <a href="race.html">The Race to Space</a>
+      <div></div>
+      <a href="orbit.html">Life in the Atmosphere</a>
+      <div></div>
+      <a href="moon.html">Men on the Moon</a>
+      <div></div>
+      <a href="future.html">The Horizon</a>
+     </div>
+
+     <hr>
+    </div>
+    <div class="blog">
+            <h2 id="men-on-the-moon">“Men on the Moon”</h2>
+            <p>After Russia’s first successful manned mission, then US
+            President John F. Kennedy began to rally support the US
+            space program, stating that the US needed to embark on space
+            missions grand enough to surpass the USSR (Kennedy, 1962).
+            Both a crewed moon landing and a space station were
+            considered to achieve this goal, and the moon landing was
+            chosen as the priority (Braun, 1962). Through a series of
+            speeches, Kennedy justified it under the principles of
+            national security and scientific advancement.</p>
+            <figure>
+            <img src="media/images/kennedy_rice_university.jpg"
+            alt="President John F. Kennedy delivers a speech at Rice University" />
+            <figcaption aria-hidden="true">President John F. Kennedy
+            delivers a speech at Rice University</figcaption>
+            </figure>
+            <p>As the moon program began to take shape, NASA turned its
+            attention to the simpler task of crewed spaceflight. The
+            Gemini project, consisting of 10 manned missions,
+            demonstrated incremental capabilities with each successive
+            flight. The program developed a two-person spacecraft and
+            pioneered solutions to many unsolved challenges, such as
+            docking and performing extravehicular activities.</p>
+            <figure>
+            <img src="media/images/gemini_4_ed_white.jpg"
+            alt="Gemini 4 astronaut Ed White during the first American spacewalk" />
+            <figcaption aria-hidden="true">Gemini 4 astronaut Ed White
+            during the first American spacewalk</figcaption>
+            </figure>
+            <p>The Gemini project’s advances facilitated the Apollo
+            missions, which would ultimately take humans to the moon,
+            (NASA, n.d.). However, tragedy struck on January 27, 1967,
+            during a ground test in preparation for the planned February
+            launch. An electrical fire took the lives of all three
+            onboard crew members, a painful reminder of the importance
+            of rigorous safety protocols and design (NASA, 1967). In
+            response, NASA took action solve all known safety risks, and
+            underwent an organizational restructuring in an attempt to
+            prevent any such mistakes from ever occurring in the
+            future.</p>
+            <figure>
+            <img src="media/images/fallen_astronaut.jpg"
+            alt="The Fallen Astronaut commemorative plaque left on the moon during Apollo 15" />
+            <figcaption aria-hidden="true">The Fallen Astronaut
+            commemorative plaque left on the moon during Apollo
+            15</figcaption>
+            </figure>
+            <p>The Soviet moon landing program also faced tragedy during
+            Soyuz 1, which encountered a series of technological
+            problems, leading to a mission abort that caused the loss of
+            its crew due to a parachute failure (BBC, 1967). Despite
+            these setbacks, both programs ultimately recovered, driven
+            by their shared determination to reach the moon.</p>
+            <figure>
+            <img src="media/images/saturn_v_and_n-1.png"
+            alt="A scale comparison between the Saturn V and N-1 rockets" />
+            <figcaption aria-hidden="true">A scale comparison between
+            the Saturn V and N-1 rockets</figcaption>
+            </figure>
+            <p>In late 1967, the US accomplished a successful uncrewed
+            launch of its Saturn V rocket (Cadbury, 2006, pg. 310-316),
+            while the Soviets’ next piloted mission, Soyuz 3, executed
+            without control or recovery problems (Hall, 2003, pg.
+            144-147). NASA’s Apollo Program was in the lead,
+            demonstrating rapid achievement through an uncrewed and
+            later a crewed orbit of the moon.</p>
+            <figure>
+            <img src="media/images/apollo_11_crew.jpg"
+            alt="The Apollo 11 crew: Neil Armstrong, Buzz Aldrin, and Michael Collins" />
+            <figcaption aria-hidden="true">The Apollo 11 crew: Neil
+            Armstrong, Buzz Aldrin, and Michael Collins</figcaption>
+            </figure>
+            <p>On July 20, 1969, as part of Apollo 11, the United States
+            successfully landed the first humans on the moon, marking a
+            monumental triumph in American space exploration history
+            (NASA, 1969). During this same period, the Soviet space
+            program faced many setbacks due to reliability and other
+            concerns, ultimately never landing a man on the moon.</p>
+            <figure>
+            <img src="media/images/apollo_11_first_step.jpg"
+            alt="Neil Armstrong steps onto the moon’s surface" />
+            <figcaption aria-hidden="true">Neil Armstrong steps onto the
+            moon’s surface</figcaption>
+            </figure>
+            <h2 id="citations">Citations</h2>
+            <p>BBC. (1967, April 24). Russian cosmonaut dies in space
+            crash. BBC On This DAy.
+            http://news.bbc.co.uk/onthisday/hi/dates/stories/april/24/newsid_2523000/2523019.stm</p>
+            <p>Braun, W. (1961, April 29). Wernher von Braun to the Vice
+            President.
+            http://www.hq.nasa.gov/office/pao/History/Apollomon/apollo3.pdf</p>
+            <p>Cadbury, D. (2006). Space race. HarperCollins.
+            https://archive.org/details/spaceraceepicbat00cadb</p>
+            <p>Hall, R., &amp; Shayler, D. (2003). Soyuz : a universal
+            spacecraft. Springer.
+            https://books.google.com/books?id=dbGchpi1HP8C</p>
+            <p>Kennedy, J. F. (1962, September 12). We choose to go to
+            the moon. Address at Rice University on the Nation’s Space
+            Effort - John F. Kennedy Presidential Library &amp; Museum.
+            https://web.archive.org/web/20100506113709/http://www.jfklibrary.org/Historical%2BResources/Archives/Reference%2BDesk/Speeches/JFK/003POF03SpaceEffort09121962.htm</p>
+            <p>NASA. (n.d.). Gemini: Stepping Stone to the Moon.
+            https://web.archive.org/web/20141221151510/http://www.nasa.gov/mission_pages/gemini/</p>
+            <p>NASA. (1969, July 6). Apollo 11 Lunar Landing Press Kit.
+            https://web.archive.org/web/20200324222919/http://www.hq.nasa.gov/alsj/a11/Apollo11_Press-Kit_restored.pdf</p>
+            <p>NASA Apollo 1 Findings and Recommendations. (1967, April
+            5). NASA. Retrieved April 26, 2024, from
+            https://www.hq.nasa.gov/pao/History/Apollo204/find.html</p>
+            <p>All images from Wikimedia</p>
+  </div>
+  <div class="footer">
+    <div class="prev">
+            <a href="orbit.html">&#8592;</a>
+          </div>
+    <div class="next">
+            <a href="future.html">&#8594;</a>
+          </div>
+  </div>
+    
+  </body>
+
+</html>

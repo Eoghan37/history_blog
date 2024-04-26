@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+          <title>history</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+      <style>
+        :root {
+          --foreground: #444;
+          --background: #FFF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            --foreground: #c9d1d9;
+            --background: #0d1117;
+          }
+
+          a:link {
+            color: #58a6ff;
+          }
+
+          a:visited {
+            color: #8e96f0;
+          }
+        }
+
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+
+        body {
+          /* font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          color: var(--foreground);
+          background: var(--background);
+
+          font-size: 1.2em;
+
+          margin: 0px 8px;
+        }
+
+        .blog {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 0 10px;
+          line-height: 2.0;
+        }
+
+        h1,
+        h2,
+        h3 {
+          /* line-height: 1.5; */
+        }
+
+        p {
+          text-align: justify;
+          margin: 2em 0;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: sticky;
+          left: 0;
+          top: 0;
+          background: var(--background);
+        }
+
+        hr {
+          width: 100%;
+          margin: 0;
+        }
+
+        .nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+        }
+
+        /* TODO: Why doesnt this render */
+        .nav div {
+          height: 1em;
+          width: 2px;
+          background: var(--foreground);
+        }
+
+        .nav a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--foreground);
+
+          margin: 10px;
+        }
+
+        iframe {
+          width: 100%;
+          aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 800px) {
+          .nav {
+            flex-direction: column;
+          }
+
+          .nav div {
+            height: 2px;
+            width: 100%;
+          }
+        }
+
+        .footer {
+          /* position: absolute; */
+          position: sticky;
+          left: 0;
+          bottom: 0;
+
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          box-sizing: border-box;
+          padding: 1.5in 7vw;
+
+          /* background: var(--foreground); */
+        }
+
+        .footer a {
+          color: var(--foreground);
+          /* color: var(--background); */
+          font-size: 4em;
+          text-decoration: none;
+        }
+
+        @media (max-width: 1200px) {
+          .footer {
+            position: static;
+            padding: 0.5in 7vw;
+            padding-top: 0in;
+
+            /* width: 100%; */
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            /**/
+            /* box-sizing: border-box; */
+            /* padding: 1.5in 7vw; */
+          }
+        }
+
+
+        figure {
+          margin: 0.5in 0;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 30px;
+        }
+
+        .small {
+          width: 50%;
+        }
+
+        figcaption {
+          text-align: center;
+        }
+      </style>
+      <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="header-container">
+     <div class="title-bar">
+      <h1>From the Earth to the Stars</h1>
+     </div>
+
+     <hr>
+
+     <div class="nav">
+      <a href="history.html">A Histoy of Space Exploration</a>
+      <div></div>
+      <a href="race.html">The Race to Space</a>
+      <div></div>
+      <a href="orbit.html">Life in the Atmosphere</a>
+      <div></div>
+      <a href="moon.html">Men on the Moon</a>
+      <div></div>
+      <a href="future.html">The Horizon</a>
+     </div>
+
+     <hr>
+    </div>
+    <div class="blog">
+            <h2 id="a-brief-history-of-american-space-exploration">“A
+            brief history of American space exploration”</h2>
+            <p>The aftermath of World War II left a power vacuum that
+            the Soviet Union sought to fill. According to Joseph C. Grew
+            “a future war with Soviet Russia is as certain as anything
+            in this world can be certain” (Challener, 1953, p. 279). The
+            USSR’s aggression in Eastern Europe prompted the United
+            States to adopt a policy of containment, setting the stage
+            for the Cold War (Wilde, 2019). Characterized by little
+            direct fighting between the US and USSR, this period
+            primarily consisted of proxy wars, displays of power, and
+            technological ability, such as the nuclear arms race and
+            space race.</p>
+            <figure>
+            <img src="media/images/berlin_wall.jpg"
+            alt="A section of the Berlin Wall" />
+            <figcaption aria-hidden="true">A section of the Berlin
+            Wall</figcaption>
+            </figure>
+            <p>As the Cold War unfolded, the US and USSR vigorously
+            competed to establish their respective economic systems,
+            capitalism and communism, as dominant in the rapidly
+            evolving world. The space race, a key aspect of this
+            competition, built upon the advances made in rocketry by
+            both countries’ nuclear weapon programs. Unlike other
+            efforts during the Cold War, the space race was not
+            primarily driven by the goal of creating a military threat
+            to the enemy but rather aimed to showcase technological
+            capabilities and create a psychological impact on the
+            opponent (American Observer, 1961).</p>
+            <figure>
+            <img src="media/images/sputnik.jpg"
+            alt="Replica of Sputnik 1, The first artificial satellite" />
+            <figcaption aria-hidden="true">Replica of Sputnik 1, The
+            first artificial satellite</figcaption>
+            </figure>
+            <p>The nation that demonstrated the most advanced
+            spaceflight capabilities would accumulate the most
+            international prestige and increased support at home.
+            Throughout the space race, the US and USSR traded blows,
+            with both reaching spectacular accomplishments (History.com,
+            2010). The US famously landed men on the moon, while the
+            USSR achieved early successes with Sputnik, the world’s
+            first artificial satellite, and the first human
+            spaceflight.</p>
+            <figure>
+            <img src="media/images/mercury_crewed_launches.jpg"
+            alt="Images of the crewed launches during the American Mercury Program" />
+            <figcaption aria-hidden="true">Images of the crewed launches
+            during the American Mercury Program</figcaption>
+            </figure>
+            <p>As we explore the early days of American space
+            exploration, this blog series will take you on a journey
+            from the pioneering days of artificial satellites to more
+            recent missions that continue to push the boundaries of
+            what’s possible. In the next post, we’ll review the defining
+            programs of the American space program during this period,
+            ranging from the Mercury Program to the Apollo missions that
+            put men on the moon (NASA, n.d.). We’ll explore the
+            successes and setbacks, as well as the technological
+            advancements and human achievements that made America’s
+            space program a global leader.</p>
+            <figure>
+            <iframe src="https://www.youtube-nocookie.com/embed/3JuKR7jf46o?si=1W4qZr2KKS_gfrYw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <figcaption>
+            A video providing an overview of the history of space
+            exploration
+            </figcaption>
+            </figure>
+            <h2 id="citations">Citations</h2>
+            <p>American Observer. (1961, April 14). Weekly Digest.
+            American Observer.
+            https://archive.org/details/sim_american-observer_1961-04-24_30_30/</p>
+            <p>Challener, R. D. (1953). Career Diplomat: The Record of
+            Joseph C. Grew [Review of Turbulent Era: A Diplomatic Record
+            of Forty Years, 1904-1945, by J. C. Grew, W. Johnson, &amp;
+            N. H. Hooker]. World Politics, 5(2), 263–279.
+            https://doi.org/10.2307/2008984</p>
+            <p>History.com. (2010, February 22). The Space Race. The
+            Space Race: Timeline, Cold War &amp; Facts | HISTORY.
+            Retrieved April 26, 2024, from
+            https://www.history.com/topics/cold-war/space-race</p>
+            <p>NASA. (n.d.). 60 Years and Counting - Human Spaceflight.
+            NASA. Retrieved April 26, 2024, from
+            https://www.nasa.gov/specials/60counting/spaceflight.html</p>
+            <p>Wilde, R., &amp; Hickman, K. (2018, October 29).
+            Containment: America’s Plan to Curtail Communism. ThoughtCo.
+            Retrieved April 26, 2024, from
+            https://www.thoughtco.com/what-was-containment-1221496</p>
+            <p>All images from Wikimedia</p>
+  </div>
+  <div class="footer">
+    <div class="prev">
+          </div>
+    <div class="next">
+            <a href="race.html">&#8594;</a>
+          </div>
+  </div>
+    
+  </body>
+
+</html>

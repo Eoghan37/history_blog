@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+          <title>orbit</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+      <style>
+        :root {
+          --foreground: #444;
+          --background: #FFF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            --foreground: #c9d1d9;
+            --background: #0d1117;
+          }
+
+          a:link {
+            color: #58a6ff;
+          }
+
+          a:visited {
+            color: #8e96f0;
+          }
+        }
+
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+
+        body {
+          /* font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          color: var(--foreground);
+          background: var(--background);
+
+          font-size: 1.2em;
+
+          margin: 0px 8px;
+        }
+
+        .blog {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 0 10px;
+          line-height: 2.0;
+        }
+
+        h1,
+        h2,
+        h3 {
+          /* line-height: 1.5; */
+        }
+
+        p {
+          text-align: justify;
+          margin: 2em 0;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: sticky;
+          left: 0;
+          top: 0;
+          background: var(--background);
+        }
+
+        hr {
+          width: 100%;
+          margin: 0;
+        }
+
+        .nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+        }
+
+        /* TODO: Why doesnt this render */
+        .nav div {
+          height: 1em;
+          width: 2px;
+          background: var(--foreground);
+        }
+
+        .nav a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--foreground);
+
+          margin: 10px;
+        }
+
+        iframe {
+          width: 100%;
+          aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 800px) {
+          .nav {
+            flex-direction: column;
+          }
+
+          .nav div {
+            height: 2px;
+            width: 100%;
+          }
+        }
+
+        .footer {
+          /* position: absolute; */
+          position: sticky;
+          left: 0;
+          bottom: 0;
+
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          box-sizing: border-box;
+          padding: 1.5in 7vw;
+
+          /* background: var(--foreground); */
+        }
+
+        .footer a {
+          color: var(--foreground);
+          /* color: var(--background); */
+          font-size: 4em;
+          text-decoration: none;
+        }
+
+        @media (max-width: 1200px) {
+          .footer {
+            position: static;
+            padding: 0.5in 7vw;
+            padding-top: 0in;
+
+            /* width: 100%; */
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            /**/
+            /* box-sizing: border-box; */
+            /* padding: 1.5in 7vw; */
+          }
+        }
+
+
+        figure {
+          margin: 0.5in 0;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 30px;
+        }
+
+        .small {
+          width: 50%;
+        }
+
+        figcaption {
+          text-align: center;
+        }
+      </style>
+      <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="header-container">
+     <div class="title-bar">
+      <h1>From the Earth to the Stars</h1>
+     </div>
+
+     <hr>
+
+     <div class="nav">
+      <a href="history.html">A Histoy of Space Exploration</a>
+      <div></div>
+      <a href="race.html">The Race to Space</a>
+      <div></div>
+      <a href="orbit.html">Life in the Atmosphere</a>
+      <div></div>
+      <a href="moon.html">Men on the Moon</a>
+      <div></div>
+      <a href="future.html">The Horizon</a>
+     </div>
+
+     <hr>
+    </div>
+    <div class="blog">
+            <h2 id="life-in-the-atmosphere">“Life in the
+            Atmosphere”</h2>
+            <p>The dawn of the American space program began with an
+            ambitious goal: to launch the first American into space.
+            This historic milestone the Mercury Program sought to
+            accomplish marked the beginning of a new era in space
+            exploration.</p>
+            <figure>
+            <img src="media/images/man_in_space_soonest_proposals.gif"
+            alt="Proposed designs for the “Man in Space Soonest” program" />
+            <figcaption aria-hidden="true">Proposed designs for the “Man
+            in Space Soonest” program</figcaption>
+            </figure>
+            <p>In 1959, the Mercury Program was born, with the mission
+            to launch a manned spacecraft into orbit around the Earth.
+            This bold initiative was originally conceived as “Man in
+            Space Soonest,” a project from the US Air Force, and was
+            subsequently transferred to NASA. The program’s primary
+            objective was to demonstrate the capability to launch a
+            human into space, a prerequisite to any future human
+            spaceflight endeavors (NASA, 1998, pg. 75).</p>
+            <figure>
+            <img src="media/images/freedom7.jpg"
+            alt="The Freedom 7 capsule that carried the first American to space" />
+            <figcaption aria-hidden="true">The Freedom 7 capsule that
+            carried the first American to space</figcaption>
+            </figure>
+            <p>The innovative design of the Mercury spacecraft was a
+            marvel of its time. It was a conical capsule with a
+            cylindrical pack of retro-rockets and a heat shield on the
+            blunt end and, through extensive testing, it proved a safe
+            and reliable ride for the astronauts (Catchpole, 2001).</p>
+            <figure>
+            <img src="media/images/the_mercury_7.jpg"
+            alt="The Mercury Seven" />
+            <figcaption aria-hidden="true">The Mercury
+            Seven</figcaption>
+            </figure>
+            <p>The selection of the Mercury Seven astronauts was a
+            rigorous process for even the most skilled test pilots. The
+            seven chosen astronauts – Alan Shepard, Gus Grissom, John
+            Glenn, Scott Carpenter, Wally Schirra, Gordon Cooper, and
+            Deke Slayton – demonstrated exceptional flying skills and
+            the ability to withstand the extreme conditions of space
+            travel.</p>
+            <p>After a series of weather-related delays, the
+            Mercury-Redstone 3 mission was ready to launch. On May 5,
+            1961, Alan Shepard became the first American in space,
+            exercising manual control over the spacecraft’s attitude and
+            propulsion throughout a ballistic trajectory (NASA, 1998,
+            pg. 346-364). This historic flight marked a turning point
+            for American space exploration, demonstrating the country’s
+            capabilities in spaceflight and validating the technology
+            that would facilitate their future ambitions.</p>
+            <figure>
+            <img src="media/images/mercury4.png" class="small"
+            alt="A commemorative patch for one of the Mercury missions" />
+            <figcaption aria-hidden="true">A commemorative patch for one
+            of the Mercury missions</figcaption>
+            </figure>
+            <p>The subsequent Mercury flights built upon Shepard’s
+            success. Gus Grissom repeated Shepard’s suborbital flight on
+            July 21, 1961, in Liberty Bell 7, and John Glenn became the
+            first American to orbit the Earth on February 20, 1962, in
+            Friendship 7 (NASA, 1998, pg. 424-437). These flights
+            allowed America to perfect basic space, and solidified the
+            Mercury Program’s significance in American space exploration
+            history.</p>
+            <p>The Mercury Program marked the beginning of human
+            spaceflight in the United States, setting the stage for
+            future space exploration milestones. The program’s success
+            demonstrated the country’s capabilities, facilitating future
+            achievements and inspiring the world.</p>
+            <h2 id="citations">Citations</h2>
+            <p>Catchpole, J. (2001). Project Mercury : NASA’s first
+            manned space programme. Springer.
+            https://archive.org/details/projectmercuryna0000catc</p>
+            <p>NASA. (1998). This New Ocean. NASA. Retrieved April 26,
+            2024, from
+            https://www.nasa.gov/wp-content/uploads/2023/02/sp-4201.pdf</p>
+            <p>All images from Wikimedia</p>
+  </div>
+  <div class="footer">
+    <div class="prev">
+            <a href="race.html">&#8592;</a>
+          </div>
+    <div class="next">
+            <a href="moon.html">&#8594;</a>
+          </div>
+  </div>
+    
+  </body>
+
+</html>

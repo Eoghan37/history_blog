@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="" >
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+          <title>future</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+
+      <style>
+        :root {
+          --foreground: #444;
+          --background: #FFF;
+        }
+
+        @media (prefers-color-scheme: dark) {
+          body {
+            --foreground: #c9d1d9;
+            --background: #0d1117;
+          }
+
+          a:link {
+            color: #58a6ff;
+          }
+
+          a:visited {
+            color: #8e96f0;
+          }
+        }
+
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+
+        body {
+          /* font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+          font-family: "Montserrat", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+          color: var(--foreground);
+          background: var(--background);
+
+          font-size: 1.2em;
+
+          margin: 0px 8px;
+        }
+
+        .blog {
+          max-width: 800px;
+          margin: 40px auto;
+          padding: 0 10px;
+          line-height: 2.0;
+        }
+
+        h1,
+        h2,
+        h3 {
+          /* line-height: 1.5; */
+        }
+
+        p {
+          text-align: justify;
+          margin: 2em 0;
+        }
+
+        .header-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: sticky;
+          left: 0;
+          top: 0;
+          background: var(--background);
+        }
+
+        hr {
+          width: 100%;
+          margin: 0;
+        }
+
+        .nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+
+          align-items: center;
+          justify-content: space-evenly;
+          text-align: center;
+        }
+
+        /* TODO: Why doesnt this render */
+        .nav div {
+          height: 1em;
+          width: 2px;
+          background: var(--foreground);
+        }
+
+        .nav a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: var(--foreground);
+
+          margin: 10px;
+        }
+
+        iframe {
+          width: 100%;
+          aspect-ratio: 16/9;
+        }
+
+        @media (max-width: 800px) {
+          .nav {
+            flex-direction: column;
+          }
+
+          .nav div {
+            height: 2px;
+            width: 100%;
+          }
+        }
+
+        .footer {
+          /* position: absolute; */
+          position: sticky;
+          left: 0;
+          bottom: 0;
+
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          box-sizing: border-box;
+          padding: 1.5in 7vw;
+
+          /* background: var(--foreground); */
+        }
+
+        .footer a {
+          color: var(--foreground);
+          /* color: var(--background); */
+          font-size: 4em;
+          text-decoration: none;
+        }
+
+        @media (max-width: 1200px) {
+          .footer {
+            position: static;
+            padding: 0.5in 7vw;
+            padding-top: 0in;
+
+            /* width: 100%; */
+            /* display: flex; */
+            /* flex-direction: row; */
+            /* justify-content: space-between; */
+            /**/
+            /* box-sizing: border-box; */
+            /* padding: 1.5in 7vw; */
+          }
+        }
+
+
+        figure {
+          margin: 0.5in 0;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        img {
+          width: 100%;
+          border-radius: 30px;
+        }
+
+        .small {
+          width: 50%;
+        }
+
+        figcaption {
+          text-align: center;
+        }
+      </style>
+      <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+    <div class="header-container">
+     <div class="title-bar">
+      <h1>From the Earth to the Stars</h1>
+     </div>
+
+     <hr>
+
+     <div class="nav">
+      <a href="history.html">A Histoy of Space Exploration</a>
+      <div></div>
+      <a href="race.html">The Race to Space</a>
+      <div></div>
+      <a href="orbit.html">Life in the Atmosphere</a>
+      <div></div>
+      <a href="moon.html">Men on the Moon</a>
+      <div></div>
+      <a href="future.html">The Horizon</a>
+     </div>
+
+     <hr>
+    </div>
+    <div class="blog">
+            <h2 id="the-horison">“The Horison”</h2>
+            <p>Reflecting on the extraordinary achievements of American
+            space exploration, the journey into the cosmos is just
+            beginning. In this final post, we’ll explore the farthest
+            reaches of our solar system and beyond, examining the
+            advancements of robotic probes and looking ahead at the
+            future of space travel.</p>
+            <figure>
+            <img src="media/images/curiosity.png"
+            alt="Self-portrait photos of the Curiosity rover" />
+            <figcaption aria-hidden="true">Self-portrait photos of the
+            Curiosity rover</figcaption>
+            </figure>
+            <p>Robotic missions have been instrumental in expanding our
+            understanding of the cosmos. NASA’s Curiosity Rover,
+            launched in 2011, has been a prime example of robotic
+            exploration. By uncovering the geological secrets of Mars,
+            Curiosity has provided valuable insights into the planet’s
+            climate, geology, and potential habitability (NASA, 2012).
+            The rover’s remarkable discovery of ancient lakes and rivers
+            on Mars has significant implications for the search for life
+            beyond Earth.</p>
+            <figure>
+            <img src="media/images/voyager.png"
+            alt="Model of a Voyager probe" />
+            <figcaption aria-hidden="true">Model of a Voyager
+            probe</figcaption>
+            </figure>
+            <p>Other notable robotic missions include the Voyager 1 and
+            2 probes, launched in 1977. These probes have traveled
+            further than any human-made object, leaving our solar system
+            and entering interstellar space (NASA, n.d.). Interestingly,
+            each of the Voyager probes carry a message about humanity
+            and our culture for any extraterrestrial life that might
+            encounter them.</p>
+            <figure>
+            <img src="media/images/pluto.jpg"
+            alt="Pluto as imaged by the New Horizons probe" />
+            <figcaption aria-hidden="true">Pluto as imaged by the New
+            Horizons probe</figcaption>
+            </figure>
+            <p>Another deep space mission is NASA’s New Horizons
+            project. It has been instrumental in expanding our
+            understanding of the Kuiper Belt, a region of icy bodies and
+            other small celestial objects beyond Neptune (NASA, 2006).
+            Launched in 2006, New Horizons flew by Pluto in 2015,
+            providing the first close-up images of the dwarf planet and
+            its moons. The mission’s discoveries have significantly
+            enhanced our understanding of the Pluto system and the
+            formation of our solar system.</p>
+            <p>As we look to the future, American space exploration is
+            poised to embark on a new era of discovery. NASA’s Artemis
+            program, launched in 2019, aims to return humans to the moon
+            by 2024 and establish a sustainable presence on the lunar
+            surface (NASA, 2024). The program’s ambitious goals include
+            the development of a lunar Gateway, a space station that
+            will orbit the moon, and the creation of a sustainable human
+            presence on the lunar surface.</p>
+            <figure>
+            <iframe src="https://www.youtube-nocookie.com/embed/7XzhtWcepos?si=65Pjn-vgNoQ8VzDC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <figcaption>
+            A breif video overview of the Artemis II mission
+            </figcaption>
+            </figure>
+            <p>Beyond the moon, NASA is also working towards
+            establishing a human settlement on Mars in the 2030s (NASA,
+            2023). The Space Launch System (SLS) and Orion spacecraft
+            are currently under development, with the aim of sending
+            astronauts on a journey to Mars in the coming decades.</p>
+            <figure>
+            <img src="media/images/orion.jpg"
+            alt="The Orion Spacecraft during assembly" />
+            <figcaption aria-hidden="true">The Orion Spacecraft during
+            assembly</figcaption>
+            </figure>
+            <p>Standing at the frontier of a new era in space
+            exploration, we see that the future horizon is filled with
+            possibility. The accomplishments of the American space
+            program serve as a testament to human ingenuity and the
+            boundless potential of human curiosity. As we venture deeper
+            into the cosmos, we are bound to uncover secrets that will
+            redefine our understanding of the universe and our place
+            within it.</p>
+            <h2 id="citations">Citations</h2>
+            <p>NASA. (n.d.). Voyager - Mission Overview. Voyager.
+            Retrieved April 26, 2024, from
+            https://voyager.jpl.nasa.gov/mission/</p>
+            <p>NASA. (2006, January 19). New Horizons. NASA Science.
+            Retrieved April 26, 2024, from
+            https://science.nasa.gov/mission/new-horizons/</p>
+            <p>NASA. (2012, July). Mars Science Laboratory Landing. NASA
+            Mars Exploration. Retrieved April 26, 2024, from
+            https://www.jpl.nasa.gov/news/press_kits/MSLLanding.pdf</p>
+            <p>NASA. (2023, September 26). Humans to Mars. NASA.
+            Retrieved April 26, 2024, from
+            https://www.nasa.gov/humans-in-space/humans-to-mars/</p>
+            <p>NASA. (2024, January 9). Artemis. NASA. Retrieved April
+            26, 2024, from
+            https://www.nasa.gov/humans-in-space/artemis/</p>
+            <p>All images from Wikimedia</p>
+  </div>
+  <div class="footer">
+    <div class="prev">
+            <a href="moon.html">&#8592;</a>
+          </div>
+    <div class="next">
+          </div>
+  </div>
+    
+  </body>
+
+</html>
